@@ -9,7 +9,7 @@ import agriculture from '../public/images/Agriculture.png';
 const Practices = () => {
   return (
     <>
-      <div className="bg-gray-100 w-full py-24 lg:p-24">
+      <section id="practices" className="bg-gray-100 w-full py-24 lg:p-24">
         <h2 className="font-bold text-3xl md:text-4xl text-gray-800 mb-12">
           Practices
         </h2>
@@ -25,7 +25,7 @@ const Practices = () => {
           <Practice title="Gig Economy" imgSrc={gigEconomy} />
           <Practice title="Agriculture" imgSrc={agriculture} />
         </div>
-      </div>
+      </section>
     </>
   );
 };

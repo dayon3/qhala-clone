@@ -11,7 +11,10 @@ import medium from '../public/images/icons/medium.svg';
 
 const Contact = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row md:justify-between items-center bg-[#18988b]">
+    <section
+      id="getInTouch"
+      className="w-full flex flex-col md:flex-row md:justify-between items-center bg-[#18988b]"
+    >
       <div className="hidden lg:block">
         <Image src={footerVector} width={160} height={479} />
       </div>
@@ -49,7 +52,7 @@ const Contact = () => {
           <Icon src={medium} />
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
