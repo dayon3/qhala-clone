@@ -3,7 +3,7 @@ import Card from './Card';
 const AboutUs = () => {
   return (
     <>
-      <div className="w-full py-24 lg:p-12">
+      <section id="about" className="w-full py-24 lg:p-12">
         <h2 className="font-bold text-3xl md:text-4xl text-gray-800 pb-12">
           About us
         </h2>
@@ -34,7 +34,7 @@ const AboutUs = () => {
             desc="Build compelling products, service and platforms, test, and iterate."
           />
         </div>
-      </div>
+      </section>
     </>
   );
 };

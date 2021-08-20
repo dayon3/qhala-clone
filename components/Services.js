@@ -8,7 +8,7 @@ import development from '../public/images/programming_code.png';
 const Services = () => {
   return (
     <>
-      <div className="py-24 lg:p-24">
+      <section id="services" className="py-24 lg:p-24">
         <h2 className="font-bold text-3xl md:text-4xl text-gray-800 mb-12">
           What we do
         </h2>
@@ -42,7 +42,7 @@ const Services = () => {
             direction="reverse"
           />
         </div>
-      </div>
+      </section>
     </>
   );
 };
