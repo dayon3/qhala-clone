@@ -1,82 +1,50 @@
-import Head from 'next/head'
+import Image from 'next/image';
+
+import AboutUs from '../components/AboutUs';
+import Container from '../components/Container';
+import Contact from '../components/Contact';
+import Practices from '../components/Practices';
+import Services from '../components/Services';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+    <Container>
+      <div className="flex flex-col items-center justify-center min-h-screen w-full flex-1 text-center py-0">
+        <>
+          <div className="pt-12 pb-28">
+            <h1 className="text-gray-900 text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl lg:leading-tight font-bold w-[10em] mt-12 pb-4 mx-auto">
+              Catalysing Africa's Digital Future
+            </h1>
+            <p className="text-gray-700 text-xl md:text-2xl px-8 md:px-28 lg:px-40 xl:px-52 pb-8">
+              We work with organizations to co-create products, services and new
+              business models. Our approach ties together strategy, research,
+              design and technology to solve today's needs and future goals.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
+            <button className="bg-yellow-500 w-[10em] rounded py-4 px-4 text-xl">
+              Get In Touch
+            </button>
+          </div>
+        </>
+        <>
+          <div className="bg-gray-100 w-full py-24 lg:p-24">
+            <p className="italic text-2xl md:text-3xl pb-8 px-8 w-full md:w-2/3 mx-auto text-gray-600">
+              "Every company is a software company. You have to start thinking
+              and operating like a digital company"
             </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
+            <p className="text-xl md:text-2xl font-bold text-gray-800">
+              Satya Nadella, CEO of Microsoft
             </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
+          </div>
+        </>
+        {/* Services */}
+        <Services />
+        {/* Practices */}
+        <Practices />
+        {/* About Us */}
+        <AboutUs />
+        {/* Contact */}
+        <Contact />
+      </div>
+    </Container>
+  );
 }
