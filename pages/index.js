@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import Practices from '../components/Practices';
 import Services from '../components/Services';
 import Quote from '../components/Quote';
+import ScrollButton from '../components/ScrollButton';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         {/* Contact */}
         <Contact />
       </div>
+      <ScrollButton />
     </Container>
   );
 }
